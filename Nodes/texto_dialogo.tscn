@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cvduc11l7uwyh"]
+
+[ext_resource type="Script" uid="uid://cudxpdpvml624" path="res://Scripts/texto_dialogo.gd" id="1_m4xat"]
+
+[node name="MarginContainer" type="MarginContainer" unique_id=845879056]
+script = ExtResource("1_m4xat")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1045286277]
+layout_mode = 2
+bbcode_enabled = true
+fit_content = true

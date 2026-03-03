@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://crl8t145x1gvp"]
+
+[ext_resource type="Script" uid="uid://6ikhki1q0qhe" path="res://Scripts/sistema_dialogo.gd" id="1_0gtqp"]
+[ext_resource type="PackedScene" uid="uid://cvduc11l7uwyh" path="res://Nodes/texto_dialogo.tscn" id="1_45u71"]
+
+[sub_resource type="Theme" id="Theme_45u71"]
+default_font_size = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vviqq"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(0.004019165, 0.004019165, 0.004019165, 1)
+border_width_left = 20
+border_width_right = 20
+border_color = Color(0.8958906, 0.745447, 0.877521, 1)
+
+[node name="MarginContainer" type="MarginContainer" unique_id=191808187]
+offset_left = 701.0
+offset_right = 1019.0
+offset_bottom = 648.0
+size_flags_horizontal = 8
+theme = SubResource("Theme_45u71")
+script = ExtResource("1_0gtqp")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1057242059]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vviqq")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer" unique_id=1544211090]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/ScrollContainer" unique_id=1933117625]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 2
+
+[node name="texto_dialogo" parent="PanelContainer/ScrollContainer/VBoxContainer" unique_id=845879056 instance=ExtResource("1_45u71")]
+layout_mode = 2

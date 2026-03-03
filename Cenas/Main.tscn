@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ditk1cnn5eiq4"]
+
+[ext_resource type="Script" uid="uid://ctxg2v6nok2up" path="res://Scripts/main.gd" id="1_675i2"]
+[ext_resource type="PackedScene" uid="uid://crl8t145x1gvp" path="res://Nodes/sistema_dialogo.tscn" id="2_k74ne"]
+
+[node name="Main" type="Node2D" unique_id=894087554]
+script = ExtResource("1_675i2")
+
+[node name="Interface" type="CanvasLayer" parent="." unique_id=1100028514]
+
+[node name="MarginContainer" parent="Interface" unique_id=191808187 instance=ExtResource("2_k74ne")]
