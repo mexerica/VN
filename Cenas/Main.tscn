@@ -2,10 +2,20 @@
 
 [ext_resource type="Script" uid="uid://ctxg2v6nok2up" path="res://Scripts/main.gd" id="1_675i2"]
 [ext_resource type="PackedScene" uid="uid://crl8t145x1gvp" path="res://Nodes/sistema_dialogo.tscn" id="2_k74ne"]
+[ext_resource type="Texture2D" uid="uid://dornhbdif840f" path="res://Img/Background/plantas_grayscale.jpeg" id="2_n6gaj"]
 
 [node name="Main" type="Node2D" unique_id=894087554]
 script = ExtResource("1_675i2")
 
 [node name="Interface" type="CanvasLayer" parent="." unique_id=1100028514]
+
+[node name="TextureRect" type="TextureRect" parent="Interface" unique_id=170331520]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_n6gaj")
+expand_mode = 1
 
 [node name="MarginContainer" parent="Interface" unique_id=191808187 instance=ExtResource("2_k74ne")]

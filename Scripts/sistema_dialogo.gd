@@ -11,7 +11,7 @@ func _ready() -> void: _scroll_bar.changed.connect(_on_scroll_bar_changed)
 func next() -> void:
 	var entry = DialogueEntry.instantiate()
 	_dialogue_entries_container.add_child(entry)
-	entry.set_content("Teste", "Isso é um teste")
+	entry.set_content("Test", "This its only a placeholder. So don't take it too seriously.", "[Sucess]")
 
 func _on_scroll_bar_changed() -> void:
 	var scroll_value = _scroll_bar.max_value
